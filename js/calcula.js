@@ -41,3 +41,4 @@ function calculaImc(peso, altura){
     
     return imc.toFixed(2);
 }
+
