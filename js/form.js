@@ -25,9 +25,14 @@ function obtemPacienteDoFormulario(form){
 
 function montaTr(paciente){
     var pacienteTr = document.createElement ("tr");
+    pacienteTr.classList.add("paciente");
+    
+    var nomeTd = montaTd(paciente.nome, "indo-nome");
+    var pesoTd = montaTd(paciente.peso, "indo-peso");
+    var alturaTd = montaTd(paciente.altura, "indo-altura");
+    var gorduraTd = montaTd(paciente.gorduraTd, "indo-gordura");
+    var imcTd = montaTd(paciente.imc, "indo-imc");
 
-    var pacienteTr = document.createElement("Tr");  
-    var nomeTd = document.createElement("Td");
     var pesoTd = document.createElement("Td");
     var alturaTd = document.createElement("Td");
     var gorduraTd = document.createElement("Td");
@@ -46,4 +51,12 @@ function montaTr(paciente){
     pacienteTr.appendChild(imcTd);
 
     return pacienteTr;
+}
+
+function montaTd(dado, classe) {
+    var td = document.createElement("td");
+    td.textContent = dado;
+    td.classList.add(classe);
+
+    return td;
 }
