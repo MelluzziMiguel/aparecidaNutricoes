@@ -11,7 +11,7 @@
 	<body>
 
 		<header>
-			<div class="container">
+			<div>
 				<h2 class="titulo">Nutri Melluzzi</h2>
 			</div>
 		</header>
@@ -82,26 +82,45 @@
 		    <h2 id="titulo-form">Adicionar novo paciente</h2>
 			<ul id="mensagens-erro"></ul>
 		    <form id="form-adiciona">
-		        <div class="campo">
+		        <div class="grupo">
 		            <label for="nome">Nome:</label>
-		            <input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
+		            <input id="nome" name="nome" type="text" placeholder="Digite o nome do seu paciente" class="campo">
 		        </div>
 		        <div class="grupo">
 		            <label for="peso">Peso:</label>
-		            <input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio">
+		            <input id="peso" name="peso" type="text" placeholder="Digite o peso do seu paciente" class="campo campo-medio">
 		        </div>
 		        <div class="grupo">
 		            <label for="altura">Altura:</label>
-		            <input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio">
+		            <input id="altura" name="altura" type="text" placeholder="Digite a altura do seu paciente" class="campo campo-medio">
 		        </div>
 		        <div class="grupo">
 		            <label for="gordura">% de Gordura:</label>
-		            <input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
+		            <input id="gordura" type="text" placeholder="Digite a porcentagem do seu paciente" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="Idade">Idade:</label>
+		            <input id="Idade" type="text" placeholder="Digite a idade do paciente" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="Matricula">Matrícula:</label>
+		            <input id="Matricula" type="text" placeholder="Digite a matrícula do seu paciente" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="Email">Email:</label>
+		            <input id="Email" type="text" placeholder="digite o Email do seu paciente" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="Estado Civil">Estado Civil:</label>
+		            <input id="estado-civil" type="text" placeholder="Digite o estado civil do seu paciente" class="campo campo-medio">
 		        </div>
 
 		        <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
 		    </form>
 		</section>
+
+		
+		
 
 		<script src="js/calcula-imc.js" ></script>
 		<script src="js/form.js" ></script>
@@ -109,5 +128,8 @@
 		<script src="js/filtra.js" ></script>
 		<script src="js/buscar-pacientes.js" ></script>
 
+		<footer>
+			<img class="img" src="img/logo nutri.png">
+		</footer>
 	</body>
 </html>
